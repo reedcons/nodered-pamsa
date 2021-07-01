@@ -367,34 +367,6 @@
         }
     },
     {
-        "id": "3801840d.4716fc",
-        "type": "group",
-        "z": "1ae16134.2ffe3f",
-        "g": "91f1378d.46f8c8",
-        "name": "Adquisición",
-        "style": {
-            "fill": "#c8e7a7",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "7d6678d5.5fdf58",
-            "87dc256a.267de8",
-            "d4abc7b9.afa878",
-            "d544bfc4.5df96",
-            "83276511.7e2308",
-            "f0c64784.cf45e8",
-            "38267ff2.c4f68",
-            "631dfd34.0b0504",
-            "e887af7f.3b1d6",
-            "cda848c0.cb1458"
-        ],
-        "x": 34,
-        "y": 299,
-        "w": 362,
-        "h": 282
-    },
-    {
         "id": "c748b389.5ca8",
         "type": "group",
         "z": "1ae16134.2ffe3f",
@@ -421,53 +393,7 @@
             "7b3f2681.a312d8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1462,
-        "h": 237.5
-    },
-    {
-        "id": "69ead5f1.65b89c",
-        "type": "group",
-        "z": "1ae16134.2ffe3f",
-        "g": "91f1378d.46f8c8",
-        "name": "Procesamiento de Datos",
-        "style": {
-            "fill": "#c8e7a7",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "c61fbdc8.6c643",
-            "4d50a4c4.10e60c",
-            "2fbbdff6.7704d"
-        ],
-        "x": 434,
-        "y": 319,
-        "w": 362,
-        "h": 82
-    },
-    {
-        "id": "a0a2fbe1.baf158",
-        "type": "group",
-        "z": "1ae16134.2ffe3f",
-        "g": "91f1378d.46f8c8",
-        "name": "Envía Datos Backend",
-        "style": {
-            "fill": "#92d04f",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "f45e3aba.7c6728",
-            "c1ab009b.0e357",
-            "8cb2135c.046c6",
-            "d685f89e.758118",
-            "818705f6.133798"
-        ],
-        "x": 434,
-        "y": 439,
-        "w": 914.5,
-        "h": 84
+        "y": 19
     },
     {
         "id": "91f1378d.46f8c8",
@@ -484,9 +410,7 @@
             "a0a2fbe1.baf158"
         ],
         "x": 8,
-        "y": 273,
-        "w": 1366.5,
-        "h": 334
+        "y": 273
     },
     {
         "id": "7575f7f7.3026d8",
@@ -510,9 +434,96 @@
             "afb95977.5ce9d8"
         ],
         "x": 34,
-        "y": 659,
-        "w": 1272,
-        "h": 170
+        "y": 659
+    },
+    {
+        "id": "3801840d.4716fc",
+        "type": "group",
+        "z": "1ae16134.2ffe3f",
+        "g": "91f1378d.46f8c8",
+        "name": "Adquisición",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7d6678d5.5fdf58",
+            "87dc256a.267de8",
+            "d4abc7b9.afa878",
+            "d544bfc4.5df96",
+            "83276511.7e2308",
+            "f0c64784.cf45e8",
+            "38267ff2.c4f68",
+            "631dfd34.0b0504",
+            "e887af7f.3b1d6",
+            "cda848c0.cb1458"
+        ],
+        "x": 34,
+        "y": 299
+    },
+    {
+        "id": "69ead5f1.65b89c",
+        "type": "group",
+        "z": "1ae16134.2ffe3f",
+        "g": "91f1378d.46f8c8",
+        "name": "Procesamiento de Datos",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "c61fbdc8.6c643",
+            "4d50a4c4.10e60c",
+            "2fbbdff6.7704d"
+        ],
+        "x": 434,
+        "y": 319
+    },
+    {
+        "id": "a0a2fbe1.baf158",
+        "type": "group",
+        "z": "1ae16134.2ffe3f",
+        "g": "91f1378d.46f8c8",
+        "name": "Envía Datos Backend",
+        "style": {
+            "fill": "#92d04f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f45e3aba.7c6728",
+            "c1ab009b.0e357",
+            "8cb2135c.046c6",
+            "d685f89e.758118",
+            "818705f6.133798"
+        ],
+        "x": 434,
+        "y": 439
+    },
+    {
+        "id": "b8ce288d.5af248",
+        "type": "group",
+        "z": "d5883d38.eb44d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "62357a75.ab7ba4",
+            "d293121d.62d2f",
+            "be3cb543.a6b828"
+        ],
+        "x": 1234,
+        "y": 519,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "eadd0d0e.01e44",
@@ -10025,8 +10036,8 @@
         "active": true,
         "console": "false",
         "complete": "false",
-        "x": 272.33330154418945,
-        "y": 298.77783966064453,
+        "x": 230,
+        "y": 280,
         "wires": []
     },
     {
@@ -10424,7 +10435,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "plain",
-        "template": "<link rel=\"stylesheet\" href=\"/css/jquery-ui.min.css\">\n<script src=\"/js/jquery-1.12.4.js\"></script>\n<script src=\"/js/jquery-ui.js\"></script>\n\n<link rel=\"stylesheet\" href=\"/css/icecream-grid.min.css\">\n\n<div ng-attr-id=\"{{msg.payload.tankName + 'd'}}\" class=\"tamletra\" style=\"display:none\" title=\"Detalle Tanque {{msg.payload.tankName}}\">\n    <div class=\"i-g\">\n        <div class=\"i-6\">\n            <strong class=\"centrado\">Inventario</strong>\n            <hr/>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Nivel Prod (auto):</div>\n                 <div class=\"i-6 azul\">{{msg.payload.productLevel || 'N/A'}} mm</div>\n            </div>\n\n\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">TOV:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.tov | number : 2 || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Nivel de Agua:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.waterLevel || 'N/A'}} mm</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Volumen de Agua:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.waterVol || 'N/A'}}  m³</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">GOV:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.gov | number : 2 || 'N/A'}} m³</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Densidad Observada:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.DObs || 'N/A'}} API °</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Temperatura de Producto:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.productTemp || 'N/A'}} °C</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Temperatura de Vapor:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.vapRoomTemp || 'N/A'}} °F</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Densidad De Referencia:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.productDRef || 'N/A'}} API °</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">VCF:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.vcf || 'N/A'}}</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">GSV:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.gsv || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Espacio Disonible:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.availableRoom || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Producto Disponible:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.availableProduct || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Corrección (S & W):</div>\n                 <div class=\"i-6 azul\">{{msg.payload.sw || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Corrección (NSV):</div>\n                 <div class=\"i-6 azul\">{{msg.payload.nsv || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Total de Masa en Aire:</div>\n                 <div class=\"i-6 azul\">{{msg.payload.totalMass || 'N/A'}} Kg</div>\n            </div>\n            <div class=\"i-g\">\n                <br/>\n                <strong class=\"centrado\" style=\"padding-top:20px\">Caudal</strong>\n                <hr/>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Caudal (TOV):</div>\n                <div class=\"i-6 azul\">{{msg.payload.flowTOV || 'N/A'}} m3/h</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Tiempo de llenado:</div>\n                <div class=\"i-6 azul\">{{msg.payload.timeToFit || 'N/A'}} h:mm</div>\n            </div>\n        </div>   \n        <div class=\"i-6\">\n            <div class=\"i-g\">\n                <div class=\"i-4\">\n                    <img class=\"i-img\" ng-src=\"/images/tank{{msg.payload.tanqueRojo?'Red':''}}.png\" style=\"width:120px;height:auto\">\n                </div>    \n                <div class=\"i-8\">\n                    <h4>{{msg.payload.productName || 'N/A'}}</h4>\n                </div>  \n            </div>\n         \n            \n        </div>\n  \n    </div>\n</div>\n<div ng-hide=\"msg.payload\">\n    <p class=\"centrado\" style=\"padding-top:60px\">\n        <img src=\"/images/usb-disconnected.png\" style=\"width:150px;height:auto\"/>\n    </p>\n</div>\n<div ng-hide=\"!msg.payload\">  \n<h4 class=\"centrado\"><strong>{{msg.payload.tankName}}</strong></h4>\n<p class=\"centrado\"> \n    <img ng-attr-id=\"{{msg.payload.tankName + 'i'}}\" style=\"display:none\" \n    ng-src=\"/images/tank{{msg.payload.tanqueRojo?'Red':''}}.png\"/>\n    <canvas title=\"Click para ver detalles\" ng-click=\"showDetails()\" class=\"puntero pp\" ng-attr-id=\"{{msg.payload.tankName + 'c'}}\" width=\"150px\" height=\"130px\" style=\"background:transparent\"></canvas>\n</p>\n\n<img title=\"Inconsistencia detectada!\" class=\"imgcheck\" ng-show=\"msg.payload.inconsistencia==0\" src=\"/images/chk0.png\"/>\n<img title=\"Inconsistencia aceptada\" class=\"imgcheck\" ng-show=\"msg.payload.inconsistencia==1\" src=\"/images/chk1.png\"/>\n\n\n<p class=\"pp\"><span>Producto: <span class=\"azul\">{{msg.payload.productName || 'N/A'}}</span></span></p>\n<p class=\"pp\"><span>Nivel Prod (auto)  : <span class=\"azul\">{{msg.payload.productLevel || 'N/A'}} mm</span></span></p> \n<p class=\"pp\"><span>Nivel Prod (manual): <span class=\"azul\" \n    ng-attr-title=\"Última medición: {{msg.payload.nivelManualFechaHora? (msg.payload.nivelManualFechaHora | date:'dd/MM/yyyy HH:mm:ss Z') : 'N/A'}}\">{{msg.payload.nivelManual || 'N/A'}} mm</span></span></p> \n<p class=\"pp\"><span>Temperatura de Prod: <span class=\"azul\">{{msg.payload.productTemp || 'N/A'}} °C</span></span></p>       \n<p class=\"pp\"><span>TOV: <span class=\"azul\">{{msg.payload.tov || 'N/A'}} L</span></span></p>       \n<!--p class=\"pp\"><span>GOV: <span class=\"azul\">{{msg.payload.gov || 'N/A'}} L</span></span></p-->       \n<p class=\"pp\"><span ng-click=\"showDetails()\" class=\"puntero resalta\">Más Detalles</span> </p>       \n</div>\n<script>\n;(function(scope) { \n    scope.$watch('msg.payload', function(newVal, oldVal) { \n        if(scope.msg) {\n            var c = document.getElementById(scope.msg.payload.tankName + 'c');\n            if(c) {\n                console.log(\"Hi \"+scope.msg.payload.tankName + 'i');\n                var ctx = c.getContext(\"2d\");\n                var img = document.getElementById(scope.msg.payload.tankName + 'i');\n                ctx.drawImage(img, 0, 0,150,130);\n                var x1=104;\n                var y1=18;\n                var x2=29;\n                var y2=83;\n                var altoTotal=y2-y1;\n                var desplazamiento=altoTotal-(altoTotal*scope.msg.payload.percent);\n                //ctx.fillRect(x1,y1,x2,y2);\n                ctx.fillStyle=\"yellow\";\n                ctx.fillRect(x1,y1+desplazamiento,x2,y2-desplazamiento);\n                ctx.fillStyle=\"black\";\n                ctx.font = \"18px Arial\";\n                ctx.fillText(Number(scope.msg.payload.percent*100).toFixed(2)+\"%\",30,50);\n                if(!scope.msg.payload.tanqueRojo)\n                    ctx.fillStyle='red';\n                else \n                    ctx.fillStyle='yellow';\n                ctx.font = \"14px Arial\";\n                ctx.fillText(\"TOV\",45,75);\n                ctx.fillText(scope.msg.payload.tov + \" L\",30,95);\n                //c.addEventListener('mousemove', function(evt) {  \n                //     var rect = c.getBoundingClientRect();\n                //        console.log(evt.clientX - rect.left, evt.clientY - rect.top);\n                //}, false);\n            }\n        }\n        scope.showDetails=function() {\n            $( \"#\"+scope.msg.payload.tankName + 'd' ).dialog({\n                modal: true,\n                height: 575,\n                width: 800,\n                buttons: {\n                 Ok: function() {\n                $( this ).dialog( \"close\" );\n            }\n      }\n    });\n        }\n    }) \n\n})(scope) \n\n</script>\n\n<style type=\"text/css\" media=\"all\">\n.puntero {\n\tcursor: pointer;\n\tcursor: hand;\n}\n.resalta:hover { \n    color: green;\n}\n.pp {\n    padding-top: 0px !important;\n    margin-top: 0px !important;\n    border-top: 0px !important;\n    padding-bottom: 0px;\n    margin-bottom: 0px !important;\n    border-bottom: 0px;\n}\n.azul{\n    color: yellow;\n}\n.der {\n    text-align: right;\n}\n.centrado {\n\ttext-align: center;;\n}\n.tamletra {\n    font-size: 80%;\n}\n.tamletra1 {\n    font-size: 95%;\n}\n.imgcheck{\n    width: 32px;\n    height: 32px;\n    position: absolute;\n\ttop: 10px;\n\tright: 10px;\n\n}\n</style>\n\n",
+        "template": "<link rel=\"stylesheet\" href=\"/css/jquery-ui.min.css\">\n<script src=\"/js/jquery-1.12.4.js\"></script>\n<script src=\"/js/jquery-ui.js\"></script>\n\n<link rel=\"stylesheet\" href=\"/css/icecream-grid.min.css\">\n\n<div ng-attr-id=\"{{msg.payload.idTanque + 'd'}}\" class=\"tamletra\" style=\"display:none\" title=\"Detalle Tanque {{msg.payload.idTanque}}\">\n    <div class=\"i-g\">\n        <div class=\"i-6\">\n            <strong class=\"centrado\">Inventario</strong>\n            <hr/>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Nivel Prod (auto):</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.productLevel,0) || 'N/A' }} mm</div>\n            </div>\n\n\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">TOV:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.tov,0) || 'N/A' }} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Nivel de Agua:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.waterLevel,0) || 'N/A' }} mm</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Volumen de Agua:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.waterVol,2) || 'N/A' }}  m³</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">GOV:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.gov,2) || 'N/A' }} m³</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Densidad Observada:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.DObs,2) || 'N/A' }} API °</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Temperatura de Producto:</div>\n                 <div class=\"i-6 azul\">{{num(msg.payload.productTemp,2) || 'N/A'}} °C</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Temperatura de Vapor:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.vapRoomTemp,2) || 'N/A'}} °F</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Densidad De Referencia:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.productDRef,2) || 'N/A'}} API °</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">VCF:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.vcf,2) || 'N/A'}}</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">GSV:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.gsv,0) || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Espacio Disonible:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.availableRoom,0) || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Producto Disponible:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.availableProduct,0) || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Corrección (S & W):</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.sw,2) || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Corrección (NSV):</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.nsv,2) || 'N/A'}} L</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Total de Masa en Aire:</div>\n                 <div class=\"i-6 azul\">{{ num(msg.payload.totalMass,0) || 'N/A'}} Kg</div>\n            </div>\n            <div class=\"i-g\">\n                <br/>\n                <strong class=\"centrado\" style=\"padding-top:20px\">Caudal</strong>\n                <hr/>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Caudal (TOV):</div>\n                <div class=\"i-6 azul\">{{ num(msg.payload.flowTOV,2) || 'N/A'}} m3/h</div>\n            </div>\n            <div class=\"i-g\">\n                <div class=\"i-6 der\">Tiempo de llenado:</div>\n                <div class=\"i-6 azul\">{{msg.payload.timeToFit || 'N/A'}} h:mm</div>\n            </div>\n        </div>   \n        <div class=\"i-6\">\n            <div class=\"i-g\">\n                <div class=\"i-4\">\n                    <img class=\"i-img\" ng-src=\"/images/tank{{msg.payload.tanqueRojo?'Red':''}}.png\" style=\"width:120px;height:auto\">\n                </div>    \n                <div class=\"i-8\">\n                    <h4>{{msg.payload.productName || 'N/A'}}</h4>\n                </div>  \n            </div>\n         \n            \n        </div>\n  \n    </div>\n</div>\n<div ng-hide=\"msg.payload\">\n    <p class=\"centrado\" style=\"padding-top:60px\">\n        <img src=\"/images/usb-disconnected.png\" style=\"width:150px;height:auto\"/>\n    </p>\n</div>\n<div ng-hide=\"!msg.payload\">  \n<h4 class=\"centrado\"><strong>{{msg.payload.tankName}}</strong></h4>\n<p class=\"centrado\"> \n    <img ng-attr-id=\"{{msg.payload.idTanque + 'i'}}\" style=\"display:none\" \n    ng-src=\"/images/tank{{msg.payload.tanqueRojo?'Red':''}}.png\"/>\n    <canvas title=\"Click para ver detalles\" ng-click=\"showDetails()\" class=\"puntero pp\" ng-attr-id=\"{{msg.payload.idTanque + 'c'}}\" width=\"150px\" height=\"130px\" style=\"background:transparent\"></canvas>\n</p>\n\n<img title=\"Inconsistencia detectada!\" class=\"imgcheck\" ng-show=\"msg.payload.inconsistencia==0\" src=\"/images/chk0.png\"/>\n<img title=\"Inconsistencia aceptada\" class=\"imgcheck\" ng-show=\"msg.payload.inconsistencia==1\" src=\"/images/chk1.png\"/>\n\n\n<p class=\"pp\"><span>Producto: <span class=\"azul\">{{msg.payload.productName || 'N/A'}}</span></span></p>\n<p class=\"pp\"><span>Nivel Prod (auto)  : <span class=\"azul\">{{ num(msg.payload.productLevel,0) || 'N/A'}} mm</span></span></p> \n<p class=\"pp\"><span>Nivel Prod (manual): <span class=\"azul\" \n    ng-attr-title=\"Última medición: {{msg.payload.nivelManualFechaHora? (msg.payload.nivelManualFechaHora | date:'dd/MM/yyyy HH:mm:ss Z') : 'N/A'}}\">{{msg.payload.nivelManual || 'N/A'}} mm</span></span></p> \n<p class=\"pp\"><span>Temperatura de Prod: <span class=\"azul\">{{ num(msg.payload.productTemp,2) || 'N/A'}} °C</span></span></p>       \n<p class=\"pp\"><span>TOV: <span class=\"azul\">{{ num(msg.payload.tov,0) || 'N/A'}} L</span></span></p>       \n<!--p class=\"pp\"><span>GOV: <span class=\"azul\">{{msg.payload.gov || 'N/A'}} L</span></span></p-->       \n<p class=\"pp\"><span ng-click=\"showDetails()\" class=\"puntero resalta\">Más Detalles</span> </p>       \n</div>\n<script>\n;(function(scope) { \n    scope.$watch('msg.payload', function(newVal, oldVal) { \n        if(scope.msg) {\n            var c = document.getElementById(scope.msg.payload.idTanque + 'c');\n            if(c) {\n                //console.log(\"Hi \"+scope.msg.payload.idTanque + 'i');\n                var ctx = c.getContext(\"2d\");\n                var img = document.getElementById(scope.msg.payload.idTanque + 'i');\n                ctx.drawImage(img, 0, 0,150,130);\n                var x1=104;\n                var y1=18;\n                var x2=29;\n                var y2=83;\n                var altoTotal=y2-y1;\n                var desplazamiento=altoTotal-(altoTotal*scope.msg.payload.percent);\n                //ctx.fillRect(x1,y1,x2,y2);\n                ctx.fillStyle=\"yellow\";\n                if(scope.msg.payload.percent>0) { //Dibujo la barra\n                    ctx.fillRect(x1,y1+desplazamiento,x2,y2-desplazamiento);\n                }\n                ctx.fillStyle=\"black\";\n                ctx.font = \"18px Arial\";\n                ctx.fillText(Number(scope.msg.payload.percent*100).toFixed(2)+\"%\",30,50);\n                if(!scope.msg.payload.tanqueRojo)\n                    ctx.fillStyle='red';\n                else \n                    ctx.fillStyle='yellow';\n                ctx.font = \"14px Arial\";\n                ctx.fillText(\"TOV\",45,75);\n                ctx.fillText(scope.msg.payload.tov + \" L\",30,95);\n                //c.addEventListener('mousemove', function(evt) {  \n                //     var rect = c.getBoundingClientRect();\n                //        console.log(evt.clientX - rect.left, evt.clientY - rect.top);\n                //}, false);\n            }\n        }\n        scope.showDetails=function() {\n            $( \"#\"+scope.msg.payload.idTanque + 'd' ).dialog({\n                modal: true,\n                height: 575,\n                width: 800,\n                buttons: {\n                    Ok: function() {\n                        $( this ).dialog( \"close\" );\n                    }\n                }\n            });\n        };\n        scope.num=function(n,digits) {\n            return new Number(n).toLocaleString('es-AR', {minimumFractionDigits: digits,  maximumFractionDigits: digits});\n        };\n}) \n\n})(scope) \n\n</script>\n\n<style type=\"text/css\" media=\"all\">\n.puntero {\n\tcursor: pointer;\n\tcursor: hand;\n}\n.resalta:hover { \n    color: green;\n}\n.pp {\n    padding-top: 0px !important;\n    margin-top: 0px !important;\n    border-top: 0px !important;\n    padding-bottom: 0px;\n    margin-bottom: 0px !important;\n    border-bottom: 0px;\n}\n.azul{\n    color: yellow;\n}\n.der {\n    text-align: right;\n}\n.centrado {\n\ttext-align: center;;\n}\n.tamletra {\n    font-size: 80%;\n}\n.tamletra1 {\n    font-size: 95%;\n}\n.imgcheck{\n    width: 32px;\n    height: 32px;\n    position: absolute;\n\ttop: 10px;\n\tright: 10px;\n\n}\n</style>\n\n",
         "output": "str",
         "x": 335,
         "y": 220,
@@ -10434,5 +10445,55 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "62357a75.ab7ba4",
+        "type": "http in",
+        "z": "d5883d38.eb44d",
+        "g": "b8ce288d.5af248",
+        "name": "",
+        "url": "/tanques",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1330,
+        "y": 560,
+        "wires": [
+            [
+                "d293121d.62d2f"
+            ]
+        ]
+    },
+    {
+        "id": "d293121d.62d2f",
+        "type": "template",
+        "z": "d5883d38.eb44d",
+        "g": "b8ce288d.5af248",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n<body style=\"background-color: #111111\">\n\n\n\n<div style=\"height:100%; text-align:center\">\n    \n\n        \n    <iframe src=\"/ui/#!/1\" width=\"1690\" height=\"1000\"  style=\"border: 0\" ></iframe>\n</div>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 1520,
+        "y": 560,
+        "wires": [
+            [
+                "be3cb543.a6b828"
+            ]
+        ]
+    },
+    {
+        "id": "be3cb543.a6b828",
+        "type": "http response",
+        "z": "d5883d38.eb44d",
+        "g": "b8ce288d.5af248",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1670,
+        "y": 560,
+        "wires": []
     }
 ]
