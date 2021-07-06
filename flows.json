@@ -3291,8 +3291,7 @@
                 "2c363dfb.57e3b2",
                 "7c4c7de7.8e7df4",
                 "7e065f8a.82fc9",
-                "e68538f6.334d48",
-                "c7113f12.96b44"
+                "e68538f6.334d48"
             ]
         ]
     },
@@ -4409,7 +4408,7 @@
         "type": "debug",
         "z": "d5883d38.eb44d",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4425,7 +4424,7 @@
         "type": "function",
         "z": "d5883d38.eb44d",
         "name": "",
-        "func": "r=[];\nvar num=function(n,digits) {\n    return Number(n).toLocaleString('es-AR', {minimumFractionDigits: digits,  maximumFractionDigits: digits});\n};\nmsg.payload.forEach((o,i)=>{\n    r.push({\n        tanque:o.payload.tankName,\n        producto:o.payload.productName,\n        productLevel:num(o.payload.productLevel,2),\n        tov:num(o.payload.tov,2),\n        productTemp:num(o.payload.productTemp,2),\n        productDRef:num(o.payload.productDRef,2),\n        gsv:num(o.payload.gsv,2),\n        totalMass:num(o.payload.totalMass,2)\n    });\n});\nmsg.payload=r;\nreturn msg;",
+        "func": "rr=[];\nvar num=function(n,digits) {\n    r=  Number(n).toLocaleString('es-AR', {minimumFractionDigits: digits,  maximumFractionDigits: digits})+'';\n    r=r.replace(/,/g, ';');\n    r=r.replace(/\\./g, ',');\n    r=r.replace(/;/g, '.');\n    return r;\n};\nmsg.payload.forEach((o,i)=>{\n    rr.push({\n        tanque:o.payload.tankName,\n        producto:o.payload.productName,\n        productLevel:num(o.payload.productLevel,2),\n        tov:num(o.payload.tov,2),\n        productTemp:num(o.payload.productTemp,2),\n        productDRef:num(o.payload.productDRef,2),\n        gsv:num(o.payload.gsv,2),\n        totalMass:num(o.payload.totalMass,2)\n    });\n});\nmsg.payload=rr;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
