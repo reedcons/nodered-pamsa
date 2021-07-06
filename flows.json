@@ -412,8 +412,31 @@
             "726b285.1c265d8",
             "afb95977.5ce9d8"
         ],
-        "x": 34,
-        "y": 659
+        "x": 14,
+        "y": 639
+    },
+    {
+        "id": "b8ce288d.5af248",
+        "type": "group",
+        "z": "d5883d38.eb44d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "62357a75.ab7ba4",
+            "d293121d.62d2f",
+            "be3cb543.a6b828"
+        ],
+        "x": 1234,
+        "y": 519,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "3801840d.4716fc",
@@ -480,29 +503,6 @@
         ],
         "x": 434,
         "y": 439
-    },
-    {
-        "id": "b8ce288d.5af248",
-        "type": "group",
-        "z": "d5883d38.eb44d",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "62357a75.ab7ba4",
-            "d293121d.62d2f",
-            "be3cb543.a6b828"
-        ],
-        "x": 1234,
-        "y": 519,
-        "w": 512,
-        "h": 82
     },
     {
         "id": "eadd0d0e.01e44",
@@ -726,7 +726,8 @@
                 "primary": "indigo",
                 "accents": "blue",
                 "warn": "red",
-                "background": "grey"
+                "background": "grey",
+                "palette": "light"
             }
         },
         "site": {
@@ -1132,6 +1133,50 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
+    },
+    {
+        "id": "b9229560.b8e3d8",
+        "type": "modbus-client",
+        "name": "new CIU888",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": true,
+        "tcpHost": "10.242.9.29",
+        "tcpPort": "502",
+        "tcpType": "TPC-RTU-BUFFERED",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "ef31a8a.6ae2f58",
+        "type": "ui_tab",
+        "name": "Lista1",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "efeedb13.09ced8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "ef31a8a.6ae2f58",
+        "order": 1,
+        "disp": false,
+        "width": "27",
+        "collapse": false
     },
     {
         "id": "84ba41d.dc2bac",
@@ -3245,7 +3290,9 @@
                 "c507bac3.876f",
                 "2c363dfb.57e3b2",
                 "7c4c7de7.8e7df4",
-                "7e065f8a.82fc9"
+                "7e065f8a.82fc9",
+                "e68538f6.334d48",
+                "c7113f12.96b44"
             ]
         ]
     },
@@ -3779,7 +3826,7 @@
         "type": "debug",
         "z": "d5883d38.eb44d",
         "name": "",
-        "active": true,
+        "active": false,
         "console": "false",
         "complete": "false",
         "x": 230,
@@ -3809,12 +3856,13 @@
         "order": 1,
         "width": "27",
         "height": "20",
-        "format": "<link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"/css/bootstrap-theme.min.css\">\n\n<table class=\"table table-bordered\">\n<tr>\n    <td><strong>Tanque</strong></td>\n    <td><strong>Producto</strong></td>\n    <td><strong>Nivel (mm)</strong></td>\n    <td><strong>TOV (L)</strong></td>\n    <td><strong>Temperatura (°C)</strong></td>\n    <td><strong>Dens. de Referencia (g/cm³) </strong></td>\n    <td><strong>GSV (L)</strong></td>\n    <td><strong>Total Mass</strong></td>\n    \n</tr>\n<tr ng-show=\"t.payload\" ng-repeat=\"t in msg.payload\">\n    <td>{{t.payload.tankName}}</td>\n    <td>{{t.payload.productName}}</td>\n    <td style=\"text-align: right\">{{t.payload.productLevel | number : 2}}</td>\n    <td style=\"text-align: right\">{{t.payload.tov | number : 2}}</td>\n    <td style=\"text-align: right\">{{t.payload.productTemp | number : 2}}</td>\n    <td style=\"text-align: right\">{{t.payload.productDRef}}</td>\n    <td style=\"text-align: right\">{{t.payload.gsv}}</td>\n    <td style=\"text-align: right\">{{t.payload.totalMass}}</td>\n    \n</tr>\n</table>",
+        "format": "<link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"/css/bootstrap-theme.min.css\">\n\n<table class=\"table table-bordered\">\n<tr>\n    <td><strong>Tanque</strong></td>\n    <td><strong>Producto</strong></td>\n    <td><strong>Nivel (mm)</strong></td>\n    <td><strong>TOV (L)</strong></td>\n    <td><strong>Temperatura (°C)</strong></td>\n    <td><strong>Dens. de Referencia (g/cm³) </strong></td>\n    <td><strong>GSV (L)</strong></td>\n    <td><strong>Total Mass</strong></td>\n    \n</tr>\n<tr ng-show=\"t.payload\" ng-repeat=\"t in msg.payload\">\n    <td>{{t.payload.tankName}}</td>\n    <td>{{t.payload.productName}}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.productLevel,2) }}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.tov,2) }}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.productTemp,2) }}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.productDRef,2) }}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.gsv,2) }}</td>\n    <td style=\"text-align: right\">{{ num(t.payload.totalMass,2) }}</td>\n    \n</tr>\n</table>\n\n<script>\n;(function(scope) { \n    scope.$watch('msg.payload', function(newVal, oldVal) { \n        scope.num=function(n,digits) {\n            return new Number(n).toLocaleString('es-AR', {minimumFractionDigits: digits,  maximumFractionDigits: digits});\n        };\n}) \n\n})(scope) \n\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
+        "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 1082.3333015441895,
-        "y": 638.7778396606445,
+        "x": 1080,
+        "y": 600,
         "wires": [
             []
         ]
@@ -4243,31 +4291,6 @@
         "wires": []
     },
     {
-        "id": "b9229560.b8e3d8",
-        "type": "modbus-client",
-        "name": "new CIU888",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": true,
-        "tcpHost": "10.242.9.29",
-        "tcpPort": "502",
-        "tcpType": "TPC-RTU-BUFFERED",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true
-    },
-    {
         "id": "f40aee1b.4f1d4",
         "type": "debug",
         "z": "1ae16134.2ffe3f",
@@ -4283,5 +4306,138 @@
         "x": 580,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "8c35432d.f9cd3",
+        "type": "ui_table",
+        "z": "d5883d38.eb44d",
+        "group": "efeedb13.09ced8",
+        "name": "",
+        "order": 0,
+        "width": "27",
+        "height": "20",
+        "columns": [
+            {
+                "field": "tanque",
+                "title": "Tanque",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "producto",
+                "title": "Producto",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "productLevel",
+                "title": "Nivel (mm)",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "tov",
+                "title": "TOV (L)",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "productTemp",
+                "title": "Temperatura (°C)",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "productDRef",
+                "title": "Dens. de Referencia (g/cm³)",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "gsv",
+                "title": "GSV (L)",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "totalMass",
+                "title": "Total Mass",
+                "width": "",
+                "align": "right",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1110,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "c7113f12.96b44",
+        "type": "debug",
+        "z": "d5883d38.eb44d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e68538f6.334d48",
+        "type": "function",
+        "z": "d5883d38.eb44d",
+        "name": "",
+        "func": "r=[];\nvar num=function(n,digits) {\n    return Number(n).toLocaleString('es-AR', {minimumFractionDigits: digits,  maximumFractionDigits: digits});\n};\nmsg.payload.forEach((o,i)=>{\n    r.push({\n        tanque:o.payload.tankName,\n        producto:o.payload.productName,\n        productLevel:num(o.payload.productLevel,2),\n        tov:num(o.payload.tov,2),\n        productTemp:num(o.payload.productTemp,2),\n        productDRef:num(o.payload.productDRef,2),\n        gsv:num(o.payload.gsv,2),\n        totalMass:num(o.payload.totalMass,2)\n    });\n});\nmsg.payload=r;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 740,
+        "wires": [
+            [
+                "8c35432d.f9cd3",
+                "c7113f12.96b44"
+            ]
+        ]
     }
 ]
